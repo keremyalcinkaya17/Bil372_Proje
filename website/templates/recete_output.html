@@ -1,0 +1,159 @@
+{% extends "base1.html" %} {% block title %} Home Page{% endblock %} {% block
+content %}
+<div class="container">
+    
+    <!--<div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <br />
+            <br />
+            <br />
+            <h3>asdasdasdasdad Nolu ID İçin (Reçete/doktor/hasta) Sorgusu</h3>
+            <table class="table mt-5 table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Hasta ıd</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+    <br /><br /><br /> -->
+    <br /><br /><br />
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-9">
+            {%if sec==0 %}
+            <div class="card bg-light" style="width: 25rem">
+                <div class="card-body">
+                    <div class="card-body">
+                    
+                        {%if hasta==1%}
+                        <h5 class="card-title mb-4">
+                            Hasta Adı: {{dk.name}}
+                        </h5>
+                        <h5 class="card-title mb-4">
+                            Hasta Soyadı: {{dk.last_name}}
+                        </h5>
+                        <p class="card-text">TC: {{dk.tc}}</p>
+                        <p class="card-text">Telefon: {{dk.tel_no}}</p>
+                        <p class="card-text">Email: {{dk.email}}</p>
+                        {%endif%}
+                        {%if hasta==0%}
+                        <h5 class="card-title mb-4">
+                            Doktor Adı: {{dk.name}}
+                        </h5>
+                        <h5 class="card-title mb-4">
+                            Doktor Soyadı: {{dk.last_name}}
+                        </h5>
+                        <p class="card-text">TC: {{dk.tc}}</p>
+                        <p class="card-text">Telefon: {{dk.tel_no}}</p>
+                        <p class="card-text">Email: {{dk.email}}</p>
+                        <p class="card-text">Branş: {{dk.branch}}</p>
+                        <p class="card-text">Sağlık Kuruluşu: {{dk.hospital}}</p>
+                        {%endif%}
+                        
+    
+                    </div>
+                </div>
+            </div>
+            <br />       
+            {% for recete in receteler %}
+            <div class="card bg-light" style="width: 25rem">
+                <div class="card-body">
+                    <h5 class="card-title mb-4">
+                        Reçete ID : {{recete.prescription_id}}
+                    </h5>
+                    {%if hasta==1%}
+                    <p class="card-text">Doktor TC: {{recete.doctor_tc}}</p>
+                    {%endif%}
+                    {%if hasta==0%}
+                    <p class="card-text">Hasta TC: {{recete.patient_tc}}</p>
+                    {%endif%}
+                    <p class="card-text">Reçete Tarihi: {{recete.prescription_date}}</p>
+                    <p class="card-text">Reçete Geçerliliik Süresi: {{recete.valid_time}}</p>
+
+                </div>
+                {%for icerik in recete_icerikleri2%}
+                {% if icerik.prescription_id==recete.prescription_id %}
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item-action list-group-item-dark">İlaç kodu: {{icerik.drug_id}}</li>
+                    <li class="list-group-item-action list-group-item-light">İlaç Miktarı: {{icerik.drug_amount}} </li>
+
+                </ul>
+                {% endif %}
+                {% endfor %}
+                
+                
+            </div>
+            <br />
+            {% endfor %}
+            {% endif %}
+            {% if sec ==1 %}
+            {% for ilac in ilaclar %}
+            <div class="card bg-light" style="width: 25rem">
+                <div class="card-body">
+                    <h5 class="card-title mb-4">
+                        İlaç ID : {{ilac.drug_id}}
+                    </h5>
+                    <p class="card-text">İlaç Adı: {{ilac.name}}</p>
+                    <p class="card-text">İlaç içeriği ve kullanımı: {{ilac.usage_content}}</p>
+            {%endfor%}
+            {% endif %}
+            <br /> <br /> 
+            {% if sec ==2 %}
+            {% for recete in receteler %}
+            <div class="card bg-light" style="width: 25rem">
+                <div class="card-body">
+                    <h5 class="card-title mb-4">
+                        Reçete ID : {{recete.prescription_id}}
+                    </h5>
+                    <p class="card-text">Doktor TC: {{recete.doctor_tc}}</p>
+                    <p class="card-text">Hasta TC: {{recete.patient_tc}}</p>
+                    <p class="card-text">Reçete Tarihi: {{recete.prescription_date}}</p>
+                    <p class="card-text">Reçete Geçerliliik Süresi: {{recete.valid_time}}</p>
+
+                </div>
+                {%for icerik in recete_icerikleri2%}
+                {% if icerik.prescription_id==recete.prescription_id %}
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item-action list-group-item-dark">İlaç kodu: {{icerik.drug_id}}</li>
+                    <li class="list-group-item-action list-group-item-light">İlaç Miktarı: {{icerik.drug_amount}} </li>
+
+                </ul>
+                {% endif %}
+                {% endfor %}
+                
+                
+            </div>
+            <br />
+            {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

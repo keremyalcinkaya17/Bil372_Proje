@@ -1,0 +1,76 @@
+Doktorlar
+1-)
+AD: Ahmet Keskin
+HASTANE: TOBB Hastanesi
+BRANŞ: Kalp Cerrahı
+MAİL: keskin@gmail.com
+TC: 15975312314
+TEL: 05553216978
+2-)
+AD: Semih Keskin
+HASTANE: Ankara Şehir Hastanesi
+BRANŞ: Beyin Cerrahı
+MAİL: semihkeskin@gmail.com
+TC: 15975127956
+TEL: 05553214921
+3-)
+AD: Ahmet Kural
+HASTANE: Ankara Şehir Hastanesi
+BRANŞ: Nöroloji
+MAİL: kural@gmail.com
+TC: 11235465487
+TEL: 05557845112
+1-)
+AD: Emin Karamercan
+HASTANE: Lapseki Çan Hastanesi
+BRANŞ: Ortopedi
+MAİL: gokcesme@gmail.com
+TC: 15974456123
+TEL: 05521565484
+
+Hastalar
+1-)
+AD: Eyüp Irmak
+MAİL: eyupir@gmail.com
+TC: 15421544655
+TEL: 05543265456
+2-)
+AD: Osman Avlu
+MAİL: avlu@gmail.com
+TC: 15545155645
+TEL: 05557777456
+3-)
+AD: Ercü Burak
+MAİL: burak@gmail.com
+TC: 15787888999
+TEL: 05546547778
+4-)
+AD: Kerim Ustura
+MAİL: usturalr@gmail.com
+TC: 18888412145
+TEL: 05444445789
+
+İLAÇ
+1-)
+İLAÇ NO: 11111
+İLAÇ İSMİ: Parol
+İLAÇ AÇIKLAMASI:PAROL hafif ve orta şiddetli ağrılar ve ateşin semptomatik (hastalığı tedavi edici değil,
+belirtileri giderici) tedavisinde kullanılır.
+2-)
+İLAÇ NO: 11112
+İLAÇ İSMİ: Nurofen
+İLAÇ AÇIKLAMASI:NUROFEN COLD & FLU, grip, soğuk algınlığı veya sinüzit gibi hastalıkların seyrinde
+görülen burun tıkanıklığı, baş ağrısı, ateş, vücut ağrıları ve diğer ağrıların giderilmesinde
+kullanılır.
+3-)
+İLAÇ NO: 11113
+İLAÇ İSMİ: Aspirin
+İLAÇ AÇIKLAMASI:NUROFEN COLD & FLU, grip, soğuk algınlığı veya sinüzit gibi hastalıkların seyrinde
+görülen burun tıkanıklığı, baş ağrısı, ateş, vücut ağrıları ve diğer ağrıların giderilmesinde
+kullanılır.
+
+Reçete
+1-) NO: 10
+2-) NO:	11
+3-) NO:	15
+

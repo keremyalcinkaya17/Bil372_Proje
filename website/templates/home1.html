@@ -1,0 +1,96 @@
+{% extends "base1.html" %} {% block title %} Home Page{% endblock %} {% block
+content %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5 mt-5">
+            <div class="col-sm-8 align-middle">
+                <br /><br /><br /><br />
+                <h3>Sorgu Sayfası</h3>
+                <p>
+                    Doktor, Hasta, İlaç, Reçete sorgusu için tıklayınız.
+                </p>
+
+                <a href="/hasta_kayit" class="btn btn-lg btn-warning"
+                    >Sorgulama</a
+                >
+            </div>
+        </div>
+        
+        <div class="col-sm-5 mt-5">
+            <br />
+             <br />
+            <img
+                style="width: 700px"
+                class="rounded float-start featurette-image img-fluid mx-2"
+                src="https://manuals.health.mil/img/Stethoscope.png"
+                alt="Kerem Sağlık"
+            />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5">
+            <div class="col-sm-8 align-middle mt-2">
+                <br /><br /><br /><br />
+                <h3>Hasta Kaydı Yapın</h3>
+
+                <p>
+                    Sisteme hasta kaydı yapın.
+                </p>
+
+                <a href="/hasta_kayit" class="btn btn-lg btn-warning"
+                    >Hasta Kayıt</a
+                >
+            </div>
+            <div class="col-sm-8 align-middle mt-4">
+                <br /><br /><br /><br />
+                <h3>Doktor Kaydı Yapın</h3>
+        
+                <p>
+                    İster yıllardır, ister ilk defa hasta olun, iaradığınızı
+                    burda bulacaksınız
+                </p>
+
+                <a href="/doktor_kayit" class="btn btn-lg btn-warning"
+                    >Doktor Kayıt</a
+                >
+            </div>
+            
+        </div>
+        <div class="col-sm-5">
+            <div class="col-sm-8 align-middle">
+                <br /><br /><br /><br />
+                <h3>İlac Kaydı Yapın</h3>
+        
+                <p>
+                    İster yıllardır, ister ilk defa hasta olun, iaradığınızı
+                    burda bulacaksınız
+                </p>
+
+                <a href="/ilac_kayit" class="btn btn-lg btn-warning"
+                    >İlaç Kayıt</a
+                >
+            </div>
+            <div class="col-sm-8 align-middle">
+                <br /><br /><br /><br />
+                <h3>Reçete Kaydı Yapın</h3>
+            
+                <p>
+                    İster yıllardır, ister ilk defa hasta olun, iaradığınızı
+                    burda bulacaksınız
+                </p>
+
+                <a href="/recete_kayit" class="btn btn-lg btn-warning"
+                    >Reçete Kayıt</a
+                >
+            </div>
+            <br /><br />
+        </div>
+    </div>
+</div>
+
+{% endblock %}

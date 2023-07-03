@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <title>{% block title %}{% endblock %}</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+
+        <script
+            type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"
+        ></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css"
+            rel="stylesheet"
+        />
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+        <script src="{{url_for('static', filename='histogram.js')}}"></script>
+        <style>
+            .chart_box {
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+
+        <title>Procurement Analysis</title>
+    </head>
+    <body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+
+        <nav class="navbar navbar-expand-lg bg-dark py-4 nav-white">
+            <div class="container">
+                <img
+                    style="width: 70px"
+                    class="rounded float-start featurette-image img-fluid mx-2"
+                    src="../../static/saglik-bakanligi-mavi-saglik-logosu-19.png"
+                    alt="Kerem Sağlık"
+                />
+
+                <a
+                    href="/"
+                    style="font-size: 30px"
+                    class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+                    >Kerem<span
+                        style="font-weight: bold; font-size: 30px"
+                        class="text-warning"
+                        >Sağlık</span
+                    ></a
+                >
+
+                <div
+                    class="collapse navbar-collapse col-ml-auto me-auto text-white"
+                    id="navbarNavDropdown"
+                >
+                    <ul class="navbar-nav col-ml-auto me-auto"></ul>
+
+                    <ul class="navbar-nav col-ml-auto ml-auto mx-5">
+                        <ul
+                            class="text-warning nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+                        >
+                            <li>
+                                <a
+                                    id="nav1"
+                                    href="/"
+                                    style="font-size: 20px"
+                                    class="nav-link nav-item px-4 text-white"
+                                    >Ana Sayfa
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    id="nav2"
+                                    href="/sorgu"
+                                    style="font-size: 20px"
+                                    class="nav-link nav-item px-4 text-white"
+                                >
+                                    Sorgu</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="nav2"
+                                    href="/hasta_kayit"
+                                    style="font-size: 20px"
+                                    class="nav-link nav-item px-4 text-warning"
+                                >
+                                    Hasta Kayıt</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="nav3"
+                                    href="/doktor_kayit"
+                                    style="font-size: 20px"
+                                    class="nav-link nav-item px-4 text-warning"
+                                    >Doktor Kayıt</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    id="nav1"
+                                    href="/ilac_kayit"
+                                    style="font-size: 20px"
+                                    class="nav-link nav-item px-4 text-warning"
+                                    >İlaç Kayıt
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    id="nav1"
+                                    href="/recete_kayit"
+                                    style="font-size: 20px"
+                                    class="nav-link nav-item px-4 text-warning"
+                                    >Reçete Kayıt
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Categories: success (green), info (blue), warning (yellow), danger (red) -->
+        <!-- {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                {% if category == 'error' %}
+                    <div class="alert alert-danger alert-dismissible fade show " role="alert">
+                        <div class= "container">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="alert alert-danger alert-dismissible fade show " role="alert">
+                        <div class= "container">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+                {% endif %}
+            
+            </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %} -->
+
+        {% block content %}{% endblock %}
+
+        <hr class="featurette-divider bg-dark mt-5" />
+        <div class="bg-dark pt-4 pb-1">
+            <footer class="container bg-dark">
+                <p class="float-end">
+                    <a id="back_to_top" class="text-warning" href="#"
+                        >Back to top</a
+                    >
+                </p>
+
+                <img
+                    style="width: 100px"
+                    class="rounded float-start featurette-image img-fluid mx-4"
+                    src="../../static/saglik-bakanligi-mavi-saglik-logosu-19.png"
+                    alt="Tobb ETU 2"
+                />
+
+                <a
+                    href="/"
+                    style="font-size: 25px"
+                    class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+                    >Kerem
+                    <span
+                        style="font-weight: bold; font-size: 30px"
+                        class="text-warning"
+                        >Sağlık</span
+                    ></a
+                >
+
+                <p class="text-white mx-5">
+                    &copy; 2003–2022 Kerem Sağlık, Inc.
+                </p>
+
+                <p class="text-white-50 my-4 mx-4">
+                    İletişim Bilgileri <br>            
+                    Telefon: +90 555 555 55 55  
+                    Mail: keremsaglik@gmail.com
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
+
