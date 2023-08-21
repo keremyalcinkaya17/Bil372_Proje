@@ -1,0 +1,273 @@
+{% extends "base1.html" %} {% block title %} Home Page{% endblock %} {% block
+content %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <form class="mt-5" method="POST">
+                <!-- enctype="multipart/form-data" -->
+                <div class="row mt-4">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                        <h3>Reçete Güncelle</h3>
+                        <h5>*** Yalnızca Güncellenecek Bilgileri Giriniz ***</h5>
+
+                
+                        
+                        <div class="form-group mt-3">
+                            <label for="surname" class="form-label"
+                                >Reçete Kodu *** Zorunludur ***</label
+                            >
+                            <input
+                                type="recete_id"
+                                class="form-control"
+                                id="recete_id"
+                                name="recete_id"
+                                placeholder="ör: 111111111111"
+                            />
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label for="password1" class="form-label"
+                                >Doktor TC</label
+                            >
+                            <input
+                                type="doktor_id"
+                                class="form-control"
+                                id="doktor_id"
+                                name="doktor_id"
+                                placeholder="ör: 111111111111"
+                            />
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label for="surname" class="form-label"
+                                >Hasta TC</label
+                            >
+                            <input
+                                type="hasta_id"
+                                class="form-control"
+                                id="hasta_id"
+                                name="hasta_id"
+                                placeholder="ör: 111111111111"
+                            />
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label for="tel" class="form-label"
+                                >Reçetenin Oluşturulduğu Tarih</label
+                            >
+                            <input
+                                type="tarih"
+                                class="form-control"
+                                id="tarih"
+                                name="tarih"
+                                placeholder="ör: 03 23 2022"
+                            />
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label for="TC" class="form-label"
+                                >Reçete Geçerlilik Süresi (Gün Bazında) </label
+                            >
+                            <input
+                                type="tarih2"
+                                class="form-control"
+                                id="tarih2"
+                                name="tarih2"
+                                placeholder="ör: 5"
+                            />
+                        </div>
+
+                        <!--<div class="form-group mt-3">
+                            <label for="tel" class="form-label"
+                                >Telefon Numarası</label
+                            >
+                            <input
+                                type="tel"
+                                class="form-control"
+                                id="tel"
+                                name="tel"
+                                placeholder="ör: 054215231"
+                            />
+                        </div> -->
+
+                        <!--<div class="mt-5">
+                            <label for="password2" class="form-label"
+                                >Reçeteyi pdf olarak ekleyin</label
+                            >
+                            <input
+                                class="form-control"
+                                name="image"
+                                id="image"
+                                type="file"
+                                accept=".png,.jpg,.pdf"
+                            />
+                        </div>-->
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-5">
+                            <div class="form-group mt-3">
+                                <label for="tel" class="form-label"
+                                    >İlaç ID</label
+                                >
+                                <div class="input-group mb-3">
+                                    <span
+                                        class="input-group-text"
+                                        id="basic-addon1"
+                                        >1
+                                    </span>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="ilac_id1"
+                                        name="ilac_id1"
+                                        placeholder=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <div class="input-group mb-3">
+                                    <span
+                                        class="input-group-text"
+                                        id="basic-addon1"
+                                        >2
+                                    </span>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="ilac_id2"
+                                        name="ilac_id2"
+                                        placeholder=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <div class="input-group mb-3">
+                                    <span
+                                        class="input-group-text"
+                                        id="basic-addon1"
+                                        >3
+                                    </span>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="ilac_id3"
+                                        name="ilac_id3"
+                                        placeholder=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <div class="input-group mb-3">
+                                    <span
+                                        class="input-group-text"
+                                        id="basic-addon1"
+                                        >4
+                                    </span>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="ilac_id4"
+                                        name="ilac_id4"
+                                        placeholder=""
+                                    />
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <div class="input-group mb-3">
+                                    <span
+                                        class="input-group-text"
+                                        id="basic-addon1"
+                                        >5
+                                    </span>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="ilac_id5"
+                                        name="ilac_id5"
+                                        placeholder=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="form-group mt-3">
+                                <label for="tel" class="form-label"
+                                    >Adet Sayısı</label
+                                >
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="sayi1"
+                                    name="sayi1"
+                                    placeholder="ör: 5"
+                                />
+                            </div>
+                            <div class="form-group mt-3">
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="sayi2"
+                                    name="sayi2"
+                                    placeholder="ör: 5"
+                                />
+                            </div>
+                            <div class="form-group mt-3">
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="sayi3"
+                                    name="sayi3"
+                                    placeholder="ör: 5"
+                                />
+                            </div>
+                            <div class="form-group mt-3">
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="sayi4"
+                                    name="sayi4"
+                                    placeholder="ör: 5"
+                                />
+                            </div>
+                            <div class="form-group mt-3">
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="sayi5"
+                                    name="sayi5"
+                                    placeholder="ör: 5"
+                                />
+                            </div>
+                            <br /><br />
+                        </div>
+                    </div>
+
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                        <div class="text-center">
+                            <button
+                                type="submit"
+                                class="btn btn-lg btn-warning"
+                            >
+                                Reçeteyi Güncelle
+                            </button>
+                        </div>
+                    </div>
+                    <br /><br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </form>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

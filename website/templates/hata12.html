@@ -1,0 +1,27 @@
+{% extends "base1.html" %} {% block title %} Home Page{% endblock %} {% block
+content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <form class="mt-5" method="POST">
+                <br />
+                <!-- enctype="multipart/form-data" -->
+                <h3>Reçete Kodu Kayıtlı Değil</h3>
+                <br /><br /><br /><br /><br /><br />
+                <div class="col-sm-8 align-middle mt-2">
+
+    
+                    <a href="/recete_guncelle" class="btn btn-lg btn-warning"
+                        >Recete Güncellemeye Geri Dön</a
+                    >
+                </div>
+                <br /><br /><br /><br /><br /><br />
+                <br /><br /><br /><br /><br /><br />
+            </form>
+            <div class="col-sm-1"></div>
+            <br /><br /><br /><br /><br /><br />
+        </div>
+    </div>
+</div>
+{% endblock %}

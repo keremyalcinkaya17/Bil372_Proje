@@ -65,12 +65,107 @@ kullanılır.
 3-)
 İLAÇ NO: 11113
 İLAÇ İSMİ: Aspirin
-İLAÇ AÇIKLAMASI:NUROFEN COLD & FLU, grip, soğuk algınlığı veya sinüzit gibi hastalıkların seyrinde
-görülen burun tıkanıklığı, baş ağrısı, ateş, vücut ağrıları ve diğer ağrıların giderilmesinde
-kullanılır.
+İLAÇ AÇIKLAMASI:ASPİRİN, asetilsalisilik asit adlı etkin maddeyi içeren ağrı kesici, ateş düşürücü,
+yangı (iltihap) giderici etkilere sahip bir ilaçtır.
 
 Reçete
 1-) NO: 10
-2-) NO:	11
-3-) NO:	15
+    DR: 15975312314
+    Hasta: 15421544655
+    Tarih: 10.05.2023
+    Süre:  5
+    1. 11111   4
+    2. 11112   3
+    3. 11113   5
+2-) NO: 11
+    DR: 15975127956
+    Hasta: 15421544655
+    Tarih: 12.07.2023
+    Süre:  3
+    1. 11111   2
+    2. 11112   3
+3-) NO: 12
+    DR: 15975312314
+    Hasta: 15545155645
+    Tarih: 18.08.2023
+    Süre:  10
+    1. 11111   2
+    2. 11113   5
 
+
+
+Demo İçin kayıt
+
+Doktor
+    AD: Ömer Gonultaş
+    HASTANE: Çanakkale Devlet Hastanesi
+    BRANŞ: Nöroloji
+    MAİL: gonultas@gmail.com
+    TC: 11123472156
+    TEL: 05112489637
+Hasta
+    AD: Dogukan Kalfa
+    MAİL: dogukankalfa@gmail.com    
+    TC: 22234871549
+    TEL: 05775693276
+İlaç
+    İLAÇ NO: 11114
+    İLAÇ İSMİ: Majezik
+    İLAÇ AÇIKLAMASI: Osteoartrit (kireglenme), vertebral kolonun (boyun, srt, bel b6lgesi) afnh sendromlan, eklem
+    drgr romatizia, aglh kas kasrlmalanrun semptomatik tedavisinde, travma ve ameliyat sonrasr
+    olugan alnda kullanılır.
+Reçete
+    NO: 13
+    DR: 11123472156
+    Hasta: 22234871549
+    Tarih: 20.08.2023
+    Süre:  10
+    1. 11111   2
+    2. 11113   5
+    2. 11114   7
+
+Demo İçin sorgu
+    Doktor:
+        11123472156
+        15975312314
+    Hasta:
+        22234871549
+        15421544655
+    İlaç:
+        11114
+        11112
+    Recete:
+        13
+        10
+Demo için Guncelleme
+Doktor:
+    AD: Ömer Gonultaş
+    HASTANE: Kırıkkale Devlet Hastanesi
+    BRANŞ: 
+    MAİL: 
+    TC: 11123472156
+    TEL:
+Hasta
+    AD: Dogukan Kalfa
+    MAİL: yenimail@gmail.com    
+    TC: 22234871549
+    TEL:
+İlaç
+    İLAÇ NO: 11114
+    İLAÇ İSMİ: Majezik_Yeni
+    İLAÇ AÇIKLAMASI:
+Reçete
+    NO: 13
+    DR: 
+    Hasta: 
+    Tarih: 
+    Süre:  30
+Demo için Silme
+Doktor:
+       11123472156
+Hasta: 
+       11123472156
+İlaç: 
+       11114
+Reçete:
+       13
